@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="equal">
+      <h1>Learn to code by watching others</h1>
+
+      <p id="first-text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+
+    <div class="equal">
+      <div id="trial-container">
+        <p id="trial-text">
+          Try it free 7 days then $20/mo. thereafter
+        </p>
+      </div>
+  
+      <section>
+        <form name="myForm" action="" method="post">
+          <div class="input-flex">
+            <input type="text" placeholder="First Name" name= "first-name">
+            <div class="error1 error-icon1 hide"></div>
+          </div>
+          <p class="warning1 warning-text1 hide"><em>First Name cannot be empty</em></p>
+
+          <div class="input-flex">
+            <input type="text" placeholder="Last Name" name = "last-name">
+            <div class="error2 error-icon2 hide"></div>
+          </div>
+          <p class="warning2 warning-text2 hide"><em>Last Name cannot be empty</em></p>
+
+          <div class="input-flex">
+            <input type="text" placeholder="Email Address" name = "email-address">
+            <div class="error3 error-icon3 hide"></div>
+          </div>
+          <p class="warning3 warning-text3 hide"><em>Looks like this is not an email</em></p>
+
+          <div class="input-flex">
+            <input type="password" placeholder="Password" name = "password">
+            <div class="error4 error-icon4 hide"></div>
+          </div>
+          <p class="warning4 warning-text4 hide"><em>Password cannot be empty</em></p>
+
+          <button type="submit"> Claim your free trial </button>
+        </form>
+  
+        <p id="bottom-text">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ifeanyi Nathaniel</a>.
+    </p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
