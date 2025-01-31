@@ -44,3 +44,29 @@ formEvent.addEventListener ("submit", function validateForm(e) {
         e.preventDefault();
     }
 });
+
+
+
+firstName.addEventListener("input", function() {
+    console.log("error states removed");
+    warning1.classList.add("hide");
+    errorImg1.classList.add("hide");
+})
+
+lastName.addEventListener("input", function() {
+    console.log("error states removed");
+    warning2.classList.add("hide");
+    errorImg2.classList.add("hide");
+})
+
+emailAddress.addEventListener("input", function() {
+    console.log("error states removed");
+    warning3.classList.add("hide");
+    errorImg3.classList.add("hide");
+});
+
+password.addEventListener("input", function() {
+    console.log("error states removed");
+    warning4.classList.add("hide");
+    errorImg4.classList.add("hide");
+});
